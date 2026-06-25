@@ -498,7 +498,7 @@ elif '🔗' in page:
     st.plotly_chart(fig, use_container_width=True)
  
     st.markdown('<div class="section-header">🔝 TOP CORRELATIONS WITH QUALITY TARGETS</div>', unsafe_allow_html=True)
-        ct1,ct2,ct3 = st.columns(3)
+    ct1,ct2,ct3 = st.columns(3)
     for col,target in zip([ct1,ct2,ct3],TARGETS):
         with col:
             st.markdown(f'<div style="color:{TC[target]};font-weight:700;font-size:0.9rem;margin-bottom:8px">{target}</div>',unsafe_allow_html=True)
